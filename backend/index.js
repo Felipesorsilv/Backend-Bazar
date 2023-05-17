@@ -15,7 +15,7 @@ dotenv.config();
 
 const connect = async () => {
   try {
-    await mongoose.connect(process.env.MONGO_URL || "mongodb://localhost:27017/bazar");
+    await mongoose.connect(process.env.MONGO_URL || "mongodb+srv://hola:hola@cluster0.h48gt.mongodb.net/");
     console.log("Conectado a mongoDB.");
   } catch (error) {
     throw error;
